@@ -1,0 +1,168 @@
+.navbar-custom {
+    background-color: #7efcfa;
+    padding: 15px 0;
+}
+
+.nav-link i {
+    font-style: italic;
+    color: #60bcb8;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.nav-link.active {
+    color: #60bcb8 !important;
+}
+
+.dropdown-mega {
+    position: static;
+}
+
+.dropdown-menu.mega-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 0;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.mega-menu h6 {
+    font-size: 16px;
+    color: #37b4b3;
+}
+
+.mega-menu p {
+    font-size: 13px;
+    color: #777;
+}
+
+.mega-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mega-menu ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.mega-menu ul li:hover {
+    color: #007bff;
+}
+
+.text-success.fw-bold {
+    font-size: 14px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+/* header end  */
+
+
+
+/* banner css start  */
+
+
+
+.hero-section {
+    background: #f6f9fe;
+    padding: 60px 0;
+}
+
+/* Common fade+slide up animation */
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delays for stagger effect */
+.fade-slide-up.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.fade-slide-up.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.fade-slide-up.delay-3 {
+    animation-delay: 0.9s;
+}
+
+.fade-slide-up.delay-4 {
+    animation-delay: 1.2s;
+}
+
+.fade-slide-up.delay-5 {
+    animation-delay: 1.5s;
+}
+
+/* Highlight color pulse animation */
+.highlight {
+    color: #d6255a;
+    animation: pulseColor 2s infinite;
+    animation-delay: 2.4s;
+    /* start after main text animations */
+}
+
+@keyframes pulseColor {
+
+    0%,
+    100% {
+        color: #d6255a;
+    }
+
+    50% {
+        color: #ff4d79;
+    }
+}
+
+.stat {
+    background-color: #3ec3b4;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 14px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+.stats-container {
+    position: relative;
+}
+
+
+
+
+
+
+/* Responsive image styling */
+.stats-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
