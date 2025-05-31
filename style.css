@@ -118,7 +118,7 @@
   color: #7efcfa !important;
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-size:28px;
   text-transform: uppercase;
   margin-bottom: 12px;
   text-shadow: none;
@@ -782,6 +782,52 @@ p.text-muted {
 /* testimonial css end */
 
 
+/* blog css start */
+.card-title {
+  font-size: 16px;
+  min-height: 50px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+}
+
+
+/* blog css end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer section css start */
 .footer-container {
@@ -1068,7 +1114,39 @@ p.text-muted {
 
 /* accodion css end  */
 
+.web-banner {
+  background: linear-gradient(rgba(8, 8, 8, 0.973), rgba(2, 2, 2, 0.274)),
+    url('img/webbannerimg.jpg') center center/cover no-repeat;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
 
+.web-banner h2 {
+  font-weight: bold;
+}
+
+.web-banner p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+.btn-web-banner {
+  background-color: white;
+  color: #030303;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.btn-web-banner:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
 
 
 
@@ -1086,7 +1164,7 @@ p.text-muted {
   .dropdown-mega:hover .dropdown-menu {
     display: block;
   }
-  
+
     .partner-item {
       flex: 0 0 33.33%; /* 3 logos per view */
     }
@@ -1134,6 +1212,16 @@ p.text-muted {
     .row.align-items-center {
       min-height: auto;
     }
+
+    .hero-section {
+      padding: 70px 15px;
+    }
+
+    .web-banner {
+      padding: 70px 15px;
+    }
+
+
 
 
 
