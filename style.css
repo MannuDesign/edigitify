@@ -1,71 +1,76 @@
- *{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
 .navbar-custom {
-    background-color: #7efcfa;
-    padding: 15px 0;
+  background-color: #7efcfa;
+  padding: 15px 0;
 }
 
 .nav-link i {
-    font-style: italic;
-    color: #60bcb8;
-    font-weight: bold;
-    margin-right: 2px;
+  font-style: italic;
+  color: #60bcb8;
+  font-weight: bold;
+  margin-right: 2px;
 }
 
 .nav-link.active {
-    color: #60bcb8 !important;
+  color: #60bcb8 !important;
 }
 
 .dropdown-mega {
-    position: static;
+  position: static;
 }
 
 .dropdown-menu.mega-menu {
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 100%;
-    border-radius: 0;
-    padding: 2rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-radius: 0;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.dropdown-mega:hover .dropdown-menu {
+  display: block;
 }
 
 .mega-menu h6 {
-    font-size: 16px;
-    color: #37b4b3;
+  font-size: 16px;
+  color: #37b4b3;
 }
 
 .mega-menu p {
-    font-size: 13px;
-    color: #777;
+  font-size: 13px;
+  color: #777;
 }
 
 .mega-menu ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .mega-menu ul li {
-    font-size: 14px;
-    margin-bottom: 6px;
-    cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .mega-menu ul li:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
 .text-success.fw-bold {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .navbar-nav {
-    gap: 20px;
+  gap: 20px;
 }
 
 /* header end  */
