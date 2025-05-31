@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,6 +34,8 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <style>
@@ -79,7 +81,7 @@
                                             <li>WordPress Development</li>
                                             <li>Responsive Design</li>
                                             <li>SEO Optimization </li>
-                                            <li class="border-top pt-2">Recommended Hosting</li>
+                                            <!-- <li class="border-top pt-2">Recommended Hosting</li> -->
                                         </ul>
                                     </div>
 
@@ -223,7 +225,7 @@
                                             <li class="border-top pt-2">Packaging & Label Design</li>
                                         </ul>
                                     </div>
-                                    >
+
 
                                 </div>
                             </div>
@@ -329,42 +331,215 @@
         </div>
     </nav>
 
-    <!-- baner section start -->
+    <!-- banner section start -->
     <section class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4">
-                    <p class="text-primary fw-bold text-uppercase mb-2 fade-slide-up delay-1">Digital Transformation
-                        Agency Help You Stay at
-                        the Top</p>
-                    <h5 class="text-muted fade-slide-up delay-2">Don't choose us when you want to run a business.</h5>
-                    <h1 class="hero-title mb-4 fade-slide-up delay-3">Choose us only<br />when you <span
-                            class="highlight">mean</span><br />business.
-                    </h1>
-                    <p class="text-muted mb-4 fade-slide-up delay-4">
-                        Some services are priced lower to attract clients who are looking to grow. But our premium
-                        pricing
-                        reflects the value we deliver to businesses that are ready to invest in excellence. We don’t
-                        just
-                        help you get there – we help you stay at the top.
-                    </p>
-                    <div class="hero-buttons d-flex fade-slide-up delay-5">
-                        <a href="#" class="btn btn-outline-secondary">Enter your website</a>
-                        <a href="#" class="btn btn-primary">Send me a proposal →</a>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Dots indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Expert Website Design & Development to Elevate Your Brand
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    Don’t settle for just a website — demand a powerful digital presence.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Choose us only<br />
+                                    when you <span class="highlight">mean</span><br />
+                                    serious digital success.
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    We create custom websites that do more than look great — they engage visitors, boost
+                                    conversions, and grow your business.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Get in Touch →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/bannerimage.png" class="img-fluid" alt="Digital Transformation" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Your Growth Partner in Social Media Excellence
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    We collaborate only with brands ready to amplify their voice.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Partner with <span class="highlight">experts</span><br />
+                                    who ignite engagement.
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    We craft targeted social media strategies that grow your audience, boost brand
+                                    awareness, and drive conversions.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Let’s Talk →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/socialmediamarketing.png" class="img-fluid" alt="Digital Growth" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Your Creative Partner in Stunning Graphic Design
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    We collaborate only with brands ready to make a bold visual impact.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Partner with <span class="highlight">design experts</span><br />
+                                    who bring your brand to life.
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    From logos to brochures, we design visuals that reflect your identity and grab
+                                    attention at every touchpoint.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Let’s Talk →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/graphicdesign.png" class="img-fluid" alt="Graphic Design" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 - SEO Services -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Drive Traffic with Targeted SEO Strategies
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    Get found by the right audience at the right time.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Rank higher<br />
+                                    with our <span class="highlight">SEO expertise</span>
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    We optimize your website to improve visibility, boost search engine rankings, and
+                                    attract high-quality organic traffic.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Let’s Talk →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/seo.png" class="img-fluid" alt="SEO Services" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 - Branding -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Build a Brand That Connects and Converts
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    Your brand deserves to be bold, consistent, and unforgettable.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Stand out with <span class="highlight">strong branding</span>
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    We shape identities that build trust, loyalty, and recognition — from logo to voice
+                                    to
+                                    visuals.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Let’s Talk →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/branding.png" class="img-fluid" alt="Brand Identity" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 - E-Commerce -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 hero-text">
+                                <p class="text-primary fw-bold fade-slide-up delay-1">
+                                    Custom E-commerce Websites That Convert
+                                </p>
+                                <h5 class="fade-slide-up delay-2">
+                                    Sell smarter with fast, secure, and scalable solutions.
+                                </h5>
+                                <h1 class="hero-title fade-slide-up delay-3">
+                                    Power your store<br />
+                                    with <span class="highlight">seamless shopping</span>
+                                </h1>
+                                <p class="text-muted fade-slide-up delay-4">
+                                    We build user-focused e-commerce platforms that turn visitors into customers and
+                                    drive
+                                    revenue growth.
+                                </p>
+                                <div class="hero-buttons d-flex fade-slide-up delay-5">
+                                    <a href="#" class="btn btn-primary">Let’s Talk →</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 position-relative stats-container text-center">
+                                <img src="img/ecommerce.png" class="img-fluid" alt="E-Commerce Development" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 position-relative stats-container">
-                    <img src="img/banner.png" class="img-fluid w-100" data-aos="zoom-in" alt="Digital Transformation" />
-                </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
+    <!-- banner section end -->
 
 
 
 
-    <!-- banner section end  -->
 
     <div class="partner-slider">
         <button class="partner-nav-btn partner-prev">&#10094;</button>
@@ -382,86 +557,866 @@
 
 
 
+
+
+
+
+    <!--  Premium Services  start -->
     <div class="container services-section mt-5">
         <h2 class="services-title">Premium Services</h2>
-        <p class="services-subtitle">Offered by our website development company</p>
+        <p class="services-subtitle">
+            We offer expert solutions in <strong>web app design & development</strong>, <strong>digital
+                marketing</strong>,
+            <strong>graphic design</strong>, <strong>advertising</strong>, and <strong>analytics</strong> — everything
+            your
+            business needs to grow online.
+        </p>
 
-        <div class="row">
+
+
+        <div class="row justify-content-center">
+
             <!-- Card 1 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="fade-up">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="e-Commerce">
+                    <div class="icon-circle">
+                        <img src="img/webdesignimg.jpg" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        e-Commerce Website Development
+                        <h5>Website Designing Services</h5>
+                        <ul class="fintech-list">
+                            <li>Responsive Website Design</li>
+                            <li>UI/UX Design for Enhanced User Experience</li>
+                            <li>Custom WordPress Theme Development</li>
+                            <li>E-commerce Website Design & Development</li>
+                            <li>Website Maintenance and Support</li>
+                            <li>SEO-friendly Website Design</li>
+                            <li>Landing Page Design for Lead Generation</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
+
             <!-- Card 2 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="fade-down">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="e-Commerce">
+                    <div class="icon-circle">
+                        <img src="img/devicon2.png" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        e-Commerce Website Development
+                        <h5>Web Development Services</h5>
+                        <ul class="fintech-list">
+                            <li>Custom Website Development</li>
+                            <li>Responsive & Mobile-friendly Design</li>
+                            <li>Content Management System (CMS) Integration</li>
+                            <li>Performance Optimization & Scalability</li>
+                            <li>Website Maintenance & Support</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
+
             <!-- Card 3 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="fade-right">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="e-Commerce">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        e-Commerce Website Development
+                        <h5>Graphics Design Services</h5>
+                        <ul class="fintech-list">
+                            <li>Logo and Brand Identity Design</li>
+                            <li>Social Media Graphics & Banners</li>
+                            <li>Product Packaging Design</li>
+                            <li>UI/UX Graphic Elements</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
+
             <!-- Card 4 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="fade-left">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="e-Commerce">
+                    <div class="icon-circle">
+                        <img src="img/appicon1.png" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        e-Commerce Website Development
+                        <h5>Mobile App Development</h5>
+                        <ul class="fintech-list">
+                            <li>Android & iOS Apps</li>
+                            <li>Flutter/React Native</li>
+                            <li>App Store Deployment</li>
+                            <li>Backend Integration</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Card 5 (new card) -->
+
+            <!-- Card 5 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="zoom-in">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="SEO Optimization">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3004/3004106.png" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        SEO Optimization Service
+                        <h5>Advertising - Creative Ad Services</h5>
+                        <ul class="fintech-list">
+                            <li>Creative Campaign Strategy</li>
+                            <li>Ad Design & Production</li>
+                            <li>Social Media Advertising</li>
+                            <li>Google Ads & PPC Management</li>
+                            <li>Brand Messaging & Storytelling</li>
+                            <li>Performance Tracking & Analytics</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
-            <!-- card 6 (new card )-->
+
+            <!-- Card 6 -->
             <div class="col-md-4 custom-card-wrapper" data-aos="fade-right">
                 <div class="custom-card">
-                    <div class="custom-card-img-wrapper">
-                        <img src="https://cdn.mos.cms.futurecdn.net/xCSAEp8DjjrT2UQB87AoFN.jpg" class="custom-card-img"
-                            alt="e-Commerce">
+                    <div class="icon-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="icon">
                     </div>
                     <div class="custom-card-body">
-                        e-Commerce Website Development
+                        <h5>Branding & Design Services</h5>
+                        <ul class="fintech-list">
+                            <li>Logo & Visual Identity Design</li>
+                            <li>Brand Guidelines & Style Guides</li>
+                            <li> UI/UX Wireframes & Prototyping </li>
+                            <li>Design Systems & Component Libraries</li>
+                            <li>Packaging Design</li>
+                            <li>Brand Strategy & Messaging</li>
+                        </ul>
                     </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  Premium Services  end -->
+
+    <section class="section-web-agency">
+        <div class="background-overlay-shapes"></div>
+        <div class="container text-white">
+            <h1 class="web-agency-title mb-4" data-aos="fade-down" data-aos-delay="100">
+                Creative Digital Solutions by edigitify.in – 6+ Years of Innovation & Excellence
+            </h1>
+            <div class="web-agency-description">
+                <p data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-orange">edigitify.in</span> is a forward-thinking digital agency in India with
+                    over <span class="text-orange">6+ years of experience</span> in delivering impactful solutions
+                    for businesses and startups. We specialize in creating powerful and visually appealing websites,
+                    intuitive mobile applications, and high-performance digital strategies tailored to help brands grow.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="300">
+                    Our core services include <span class="text-orange">web design</span>,
+                    <span class="text-orange">app development</span>,
+                    <span class="text-orange">graphic design</span>,
+                    <span class="text-orange">ad campaigning</span>,
+                    <span class="text-orange">branding</span>,
+                    <span class="text-orange">influencer marketing</span>,
+                    and <span class="text-orange">social media marketing</span>.
+                    At edigitify.in, we combine creativity with strategy to produce measurable results that empower
+                    your business in the digital world.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="400">
+                    Our expert team of designers, developers, and marketers work with passion and precision to
+                    deliver solutions that are functional, feature-rich, and visually unique. Whether you're a startup
+                    or an established business, our tailored services help you stand out and scale effectively.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="500">
+                    With every project, our goal is simple – to bring your vision to life through innovation,
+                    design excellence, and a deep understanding of modern digital trends.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section start -->
+
+    <div class="container py-5">
+        <div class="row align-items-center gx-5 gy-4">
+            <!-- Left Content -->
+            <div class="col-md-6">
+                <p class="text-red-600 font-semibold text-xs tracking-wide mb-2">
+                    ABOUT US
+                </p>
+                <h2 class="text-gray-900 font-normal text-2xl text-md-3xl leading-tight mb-3">
+                    Expert <span class="font-extrabold text-blue-700">IT Solutions</span><br />
+                    With Over 5 Years of Industry Experience
+                </h2>
+                <p class="text-secondary text-sm mb-4" style="color: #4b5563; line-height: 1.625">
+                    Our team comes with the experience and knowledge <strong> necessary to deliver white glove
+                    </strong>.
+                    fully managed campaigns that surpass industry
+                </p>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="phone-box me-3">
+                        <i class="fas fa-phone-alt phone-icon"></i>
+                    </div>
+                    <div>
+                        <p class="text-secondary text-xs mb-1" style="color: #4b5563">
+                            Call to ask any question:
+                        </p>
+                        <a href="tel:+912345678900" class="text-blue-700 font-semibold text-sm"
+                            style="text-decoration: none">
+                            +91 9911 081 234
+                        </a>
+                    </div>
+                </div>
+                <ul class="no-bullets text-secondary" style="color: #7efcfa; font-size: 0.875rem;">
+                    <li class="d-flex align-items-start mb-2">
+                        <i class="far fa-dot-circle list-dot-icon"></i>
+                        Expert <strong> Website Designing & Development</strong> for powerful digital presence
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                        <i class="far fa-dot-circle list-dot-icon"></i>
+                        Creative and impactful <strong> Graphics Design</strong> for brands that stand out
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                        <i class="far fa-dot-circle list-dot-icon"></i>
+                        Data-driven <strong> Digital Marketing</strong> strategies for measurable growth
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                        <i class="far fa-dot-circle list-dot-icon"></i>
+                        End-to-end <strong> Branding Solutions</strong> to elevate business identity
+                    </li>
+                    <li class="d-flex align-items-start">
+                        <i class="far fa-dot-circle list-dot-icon"></i>
+                        Recognized as a <strong> leading IT solutions company</strong> with 25+ years of experience
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-md-6 d-flex flex-wrap justify-content-center gap-3" style="gap: 1rem !important">
+                <img alt="Team discussing IT strategy and design" src="img/Graphicsdesign.jpg" width="200" height="280"
+                    class="object-cover" />
+                <img alt="Collaborative website design session with professionals" src="img/webdesignimg.jpg"
+                    width="200" height="280" class="object-cover" />
+                <img alt="Experts reviewing digital transformation strategies" src="img/add_video.jpg" width="200"
+                    height="140" class="object-cover" />
+                <div class="blue-box">
+                    <p class="number">5</p>
+                    <p>Years</p>
+                    <p>Experience In</p>
+                    <p>IT Solutions</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- about section end -->
+
+
+    <!-- Video Section Start -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary fw-bold" style="color:#7efcfa;">Our Creative Work</h2>
+                <p class="text-muted">Explore our videos on Web Design, Development, Graphics & Campaigns</p>
+            </div>
+            <div class="row g-4">
+                <!-- Video 1: Web Design -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Web Design Video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h6 class="mt-2 text-center"> Website Designing & Development
+                    </h6>
+                </div>
+                <!-- Video 2: Development -->
+
+                <!-- Video 3: Graphics -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Graphics Design Video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h6 class="mt-2 text-center">Graphics Design</h6>
+                </div>
+                <!-- Video 4: Campaign Ad -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Campaign Video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h6 class="mt-2 text-center">Ad Campaign</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+
+
+
+
+    <!-- why choose start -->
+    <section class="why-edigitify-section">
+        <div class="container">
+            <h2 class="why-edigitify-title">Why Choose edigitify for Web Design, Branding & Digital Marketing</h2>
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/skills.png"
+                                alt="Skilled Web Design and Marketing Team">
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="feature-title">Experienced & Skilled Team</h4>
+                            <p class="feature-description">
+                                edigitify's certified professionals specialize in custom web design, app development,
+                                graphic design,
+                                and social media strategies that drive traffic and improve search engine rankings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/settings--v1.png"
+                                alt="All-in-One Digital Services">
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="feature-title">Comprehensive Digital Solutions</h4>
+                            <p class="feature-description">
+                                From SEO-optimized web development and influencer marketing to branding and SMM
+                                campaigns,
+                                edigitify
+                                offers end-to-end digital services tailored for growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/rocket--v1.png"
+                                alt="Latest Technology Stack">
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="feature-title">Latest Technology & Tools</h4>
+                            <p class="feature-description">
+                                We use cutting-edge technology and modern frameworks to build responsive websites and
+                                creative branding
+                                campaigns that deliver measurable results and high user engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/time-machine.png" alt="Client Satisfaction">
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="feature-title">Client-First Approach</h4>
+                            <p class="feature-description">
+                                With a focus on client satisfaction and retention, edigitify builds long-term
+                                relationships
+                                by
+                                delivering optimized digital strategies, consistent communication, and quality
+                                performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why choose end  -->
+
+
+
+
+    <section class="unique-section">
+        <div class="container">
+            <h2 class="unique-title">What Makes edigitify Different From Other Digital Marketing and Web Design
+                Companies?
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/briefcase.png" alt="Domain Expertise">
+                        <div class="card-title">6+ Years of Industry Experience</div>
+                        <p class="card-text">With over 6 years of hands-on experience, edigitify delivers proven digital
+                            marketing, website development, and branding services tailored to diverse industries.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-left">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png"
+                            alt="AI Integration">
+                        <div class="card-title">Next-Gen Digital Solutions</div>
+                        <p class="card-text">We stay ahead with the latest in web development, influencer marketing, and
+                            social media strategy powered by modern technologies and AI trends.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/money.png" alt="Budget Friendly">
+                        <div class="card-title">Affordable Web Design Packages</div>
+                        <p class="card-text">Get high-performing, responsive websites and mobile apps at competitive
+                            rates without compromising quality or functionality.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Free Domain">
+                        <div class="card-title">Free Domain & Hosting</div>
+                        <p class="card-text">Our all-in-one plans include free domain registration and fast, secure
+                            hosting to get your business online quickly and efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in-up">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/design.png" alt="Customization">
+                        <div class="card-title">Custom Website Design</div>
+                        <p class="card-text">Every website we build is customized to reflect your brand identity,
+                            marketing goals, and user experience strategy.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-up">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/consultation.png" alt="Consultancy">
+                        <div class="card-title">24/7 Expert Consultancy</div>
+                        <p class="card-text">From strategy to execution, our digital experts are available around the
+                            clock to support and guide your project.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-left">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/technical-support.png" alt="After Sales">
+                        <div class="card-title">Reliable After-Sales Support</div>
+                        <p class="card-text">We offer continuous maintenance and performance optimization to ensure your
+                            digital presence stays strong post-launch.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in-down">
+                    <div class="card-box">
+                        <img src="https://img.icons8.com/ios-filled/50/combo-chart--v1.png" alt="Trends Potting">
+                        <div class="card-title">Real-Time Trend Tracking</div>
+                        <p class="card-text">We monitor digital marketing trends to update your campaigns and designs,
+                            helping you stay ahead of your competitors.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Achievement sttart -->
+    <div class="container mt-5">
+        <h2 class="services-title" data-aos="fade-down">Achievement</h2>
+        <p class="services-subtitle" data-aos="fade-up">
+            We believe that our works can contribute to a better world.
+        </p>
+
+        <div class="row">
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="stat-box">
+                    <i class="bi bi-clock-history stat-icon"></i>
+                    <span class="stat-number">24</span>
+                    <p>Working Hours</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-right">
+                <div class="stat-box">
+                    <i class="bi bi-gift stat-icon"></i>
+                    <span class="stat-number">8</span>
+                    <p>Completed Projects</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-left">
+                <div class="stat-box">
+                    <i class="bi bi-people-fill stat-icon"></i>
+                    <span class="stat-number">8</span>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" data-aos="zoom-in-up">
+                <div class="stat-box">
+                    <i class="bi bi-award-fill stat-icon"></i>
+                    <span class="stat-number">50</span>
+                    <p>Awards Received</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement section end-->
+
+
+    <!-- portfolio section start  -->
+    <section class="portfolio-section text-center">
+        <div class="container">
+
+            <h2 class="services-title mb-5">Check Our Portfolio</h2>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="portfolio-card">
+                        <img src="img/oceansandearthrealty.webp" alt="Carmucho Website Project" />
+                        <h6> oceansandearthrealty </h6>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="portfolio-card">
+                        <img src="img/gymtexflooring.webp" alt="Real Apple Website Project" />
+                        <h6>Gymtexflooring</h6>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-down">
+                    <div class="portfolio-card">
+                        <img src="img/heritagewindowsolutions.webp" alt="Rehbar Matrimonial Website Project" />
+                        <h6>Heritagewindowsolutions</h6>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-left">
+                    <div class="portfolio-card">
+                        <img src="https://www.foduu.com/themes/default/frontend_assets/images/website-portfolio/lms.webp"
+                            alt="Lingo School Website Project" />
+                        <h6>Lingo School</h6>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-orange mt-4" data-aos="zoom-in">View More</a>
+        </div>
+    </section>
+    <!-- portfolio section end -->
+
+
+    <!-- testimonials section start  -->
+
+    <div class="testimonial-section mt-5">
+        <h2 class="services-title"> Testimonial </h2>
+        <!-- <p class="services-subtitle">
+            We offer expert solutions in <strong>web app design & development</strong>, <strong>digital
+                marketing</strong>,
+            <strong>graphic design</strong>, <strong>advertising</strong>, and <strong>analytics</strong> — everything
+            your
+            business needs to grow online.
+        </p>  -->
+
+        <div class="carousel">
+            <div class="testimonial-container" id="testimonialTrack">
+                <!-- You can add more cards here -->
+                <div class="testimonial-card blue">
+                    <div class="testimonial-logo"> DreamLens Production </div>
+                    <p class="testimonial-text">" "The best quality of eDigitify is listening before starting the work.
+                        They never over-commit. They commit what they can do and do what they commit. "</p>
+                    <div class="stars">★★★★★</div>
+
+                </div>
+
+                <div class="testimonial-card yellow">
+                    <div class="testimonial-logo"> Evolve Gym </div>
+                    <p class="testimonial-text">" "The strategies, the planning, the execution and the service makes
+                        them the best Digital Marketing Company. We're very happy with the services. "</p>
+                    <div class="stars">★★★★★</div>
+
+                </div>
+
+                <div class="testimonial-card pink">
+                    <div class="testimonial-logo"> Falbazaar </div>
+                    <p class="testimonial-text">" "They induced an in-depth analysis for our web creation and took all
+                        hands on-board for the progressive perspective and our website now portrays their approach.
+                        Client satisfaction is what they mainly work for. The Social media marketing team is filled with
+                        humour, creativity and passion. We wish them all the best for future." "</p>
+                    <div class="stars">★★★★★</div>
+
+                </div>
+
+                <!-- Duplicate cards to enable seamless looping -->
+                <div class="testimonial-card blue">
+                    <div class="testimonial-logo">Evolving Sanctuary</div>
+                    <p class="testimonial-text">"It was so easy working with you! I appreciated the speed and attention
+                        to detail with the assets I needed. Especially, on short notice. The work went smoothly and I
+                        feel taken care of."</p>
+                    <div class="stars">★★★★★</div>
+
+                </div>
+
+                <div class="testimonial-card yellow">
+                    <div class="testimonial-logo"> DreamLens Production </div>
+                    <p class="testimonial-text">" The best quality of eDigitify is listening before starting the work.
+                        They never over-commit. They commit what they can do and do what they commit. "</p>
+                    <div class="stars">★★★★★</div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--  testimonials section end -->
+
+
+    <!-- accodion section start -->
+    <div class="container my-5">
+        <div class="row faq-section align-items-center">
+
+            <!-- Left Image -->
+            <div class="col-md-6 faq-image">
+                <img src="img/faqimages.png" alt="FAQ Illustration">
+            </div>
+
+            <!-- Right FAQ Accordion -->
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+                <h3 class="faq-title mb-4 fw-bold">FAQ</h3>
+                <div class="accordion" id="faqAccordion">
+
+                    <!-- Web Design & Development -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse1">
+                                What technologies do you use for web app development?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We use modern technologies like HTML5, CSS3, JavaScript, Bootstrap, React, WordPress,
+                                and PHP to build scalable, responsive, and secure web apps tailored to your business
+                                goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Marketing -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse2">
+                                How do you manage social media marketing campaigns?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We create customized content calendars, run paid ad campaigns, manage engagement, and
+                                track performance metrics across platforms like Instagram, Facebook, LinkedIn, and more.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Designing -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse3">
+                                What types of graphic design services do you offer?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We design logos, social media creatives, brochures, banners, ad creatives, and UI/UX
+                                visuals that align with your brand's identity and messaging.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Branding -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse4">
+                                How do you help with brand building?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our branding services include logo design, brand identity creation, tone of voice
+                                development, and consistent visual communication to build a memorable and professional
+                                presence.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Influencer Marketing -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                        <h2 class="accordion-header" id="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse5">
+                                Do you offer influencer marketing services?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we collaborate with micro and macro influencers across niches to promote your brand
+                                with targeted campaigns, boosting reach and engagement effectively.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Support -->
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                        <h2 class="accordion-header" id="faq6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapse6">
+                                Will I receive personal support during my project?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Absolutely! You'll have direct access to our team for consultations, progress updates,
+                                and feedback throughout your project. We're here to guide you 24/7.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- accodion section end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section design start  -->
+    <footer class="footer-container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- <div class="footer-title">Mobile Thinking in your<br> mailbox</div> -->
+                <form class="email-form d-flex align-items-center">
+                    <input type="email" placeholder="name@example.com" required>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="privacyCheck">
+                    <label class="form-check-label small" for="privacyCheck">
+                        I agree to the privacy statement
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row">
+            <div class="col-md-3 footer-links">
+                <ul>
+                    <li><strong>Our Services</strong></li>
+                    <li> Web & App Development </li>
+                    <li> Marketing </li>
+                    <li> Advertising& Analytics </li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <p><strong>Head Office – Zwolle</strong><br>
+                    Hanzelaan 351<br>
+                    8017 JM Zwolle<br>
+                    Netherlands<br>
+                    +31 (0)38 - 760 1750<br>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <p><strong>Creative Studio – Amsterdam</strong><br>
+                    Moermanskkade 313<br>
+                    1013 BC Amsterdam<br>
+                    Netherlands<br>
+                    +31 (0)20 - 354 0259<br>
+
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <p><strong> Office Address </strong><br>
+                    22A, Third Floor,<br>
+                    Hauz Khas Village,<br>
+                    New Delhi, Delhi 110016<br>
+                    India<br>
+                    +91 11 4000 1234<br>
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer-bottom d-flex justify-content-between align-items-center mt-4">
+            <div>
+                <span class="dot"></span> info@edigitify.com
+            </div>
+            <div class="social-icons">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+            <div>Privacy Policy</div>
+        </div>
+    </footer>
+    <!-- footer sectio design end -->
 
 
 
@@ -514,12 +1469,50 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- jQuery + Waypoints + Counter-Up JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <script>
         AOS.init({
             duration: 1000,
             once: true
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $('.stat-number').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+    <script>
+        const track = document.getElementById("testimonialTrack");
+        const cards = document.querySelectorAll(".testimonial-card");
+        let index = 0;
+        const visibleCards = 3;
+        const totalCards = cards.length;
+
+        function slideNext() {
+            index++;
+            if (index > totalCards - visibleCards) {
+                index = 0;
+            }
+            track.style.transform = `translateX(-${index * (100 / visibleCards)}%)`;
+        }
+
+        setInterval(slideNext, 3000); // Slides every 3 seconds
+    </script>
+
+
 </body>
 
 </html>
