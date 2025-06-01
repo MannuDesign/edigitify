@@ -1,77 +1,90 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar-custom {
-      background-color: #7efcfa;
-      padding: 15px 0;
-    }
+  background-color: #7efcfa;
+  padding: 15px 0;
+}
 
-    .nav-link i {
-      font-style: italic;
-      color: #60bcb8;
-      font-weight: bold;
-      margin-right: 2px;
-    }
+.nav-link i {
+  font-style: italic;
+  color: #60bcb8;
+  font-weight: bold;
+  margin-right: 2px;
+}
 
-    .nav-link.active {
-      color: #60bcb8 !important;
-    }
+.nav-link.active {
+  color: #60bcb8 !important;
+}
 
-    .dropdown-mega {
-      position: static;
-    }
+.dropdown-mega {
+  position: static;
+}
 
-    .dropdown-menu.mega-menu {
-      width: 100%;
-      left: 0;
-      right: 0;
-      top: 100%;
-      border-radius: 0;
-      padding: 2rem;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      display: none;
-    }
+.dropdown-menu.mega-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-radius: 0;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: none;
+}
 
-    .dropdown-mega:hover .dropdown-menu {
-      display: block;
-    }
+.dropdown-mega:hover .dropdown-menu {
+  display: block;
+}
 
-    .mega-menu h6 {
-      font-size: 16px;
-      color: #37b4b3;
-    }
+.mega-menu h6 {
+  font-size: 16px;
+  color: #37b4b3;
+}
 
-    .mega-menu p {
-      font-size: 13px;
-      color: #777;
-    }
+.mega-menu p {
+  font-size: 13px;
+  color: #777;
+}
 
-    .mega-menu ul {
-      list-style: none;
-      padding-left: 0;
-    }
+.mega-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
 
-    .mega-menu ul li {
-      font-size: 14px;
-      margin-bottom: 6px;
-      cursor: pointer;
-    }
+.mega-menu ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
 
-    .mega-menu ul li:hover {
-      color: #007bff;
-    }
+.mega-menu ul li:hover {
+  color: #007bff;
+}
 
-    .text-success.fw-bold {
-      font-size: 14px;
-    }
+.navbar-nav {
+  gap: 20px;
+}
 
-    .navbar-nav {
-      gap: 20px;
-    }
+.hamburger-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #000;
+}
+
+.modal-content {
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.modal-title {
+  color: #37b4b3;
+  font-weight: bold;
+}
 
 /* header end  */
 
@@ -253,6 +266,101 @@ p.text-muted {
     transform: translateY(0);
   }
 }
+
+.clearflex {clear: both;}
+
+/* maquee css  */
+.marquee-wrapper {
+  background-color: #7efcfa;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  color: #000;
+  
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 50s linear infinite;
+}
+
+.marquee-track span {
+  margin-right: 50px;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.marquee-track strong {
+  color: #635757;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-inner {
+  display: flex;
+}
+
+
+/* marquee css end */
+
+
+
+.breadcrumb-section {
+  height: 250px;
+  background-image: url('img/contact.jpg');
+  /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.breadcrumb-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.breadcrumb-section .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.breadcrumb-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-section .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.breadcrumb-section .breadcrumb-item.active {
+  color: #fff;
+}
+
+
+
+
 
 
 
@@ -912,6 +1020,37 @@ p.text-muted {
 /* footer section css end  */
 
 
+
+
+
+/* contact page css tart */
+.text-brown { color: #5c2c06; }
+    .btn-brown {
+      background-color: #a5693d;
+      color: white;
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    .btn-brown:hover { background-color: #8a5631; }
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: none !important;
+    }
+    .form-control:focus {
+      border-color: #a5693d;
+    }
+    .contact-section { background-color: #fff; }
+    a { text-decoration: none; }
+
+
+    
 
 
 
