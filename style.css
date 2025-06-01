@@ -80,11 +80,10 @@
 /* banner css start  */
 
 .hero-section {
-  background: rgb(245, 245, 245);
-  
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.4));
   position: relative;
   overflow: hidden;
-  color: #000;
+  
 }
 
 #heroCarousel {
@@ -94,11 +93,10 @@
 
 .carousel-item {
   transition: opacity 1s ease;
-  background: rgb(245, 245, 245);
+   /* background: rgb(245, 245, 245);   */
   /* white background for content */
-  border-radius: 15px;
- 
-  padding: 30px 40px;
+   
+  
 }
 
 .carousel-item.active {
@@ -194,7 +192,7 @@ p.text-muted {
   border-radius: 16px;
   
   object-fit: contain;
-  max-height: 400px;
+   height:800px;
 }
 
 /* Remove carousel arrows */
@@ -1260,7 +1258,7 @@ p.text-muted {
     }
 
     .stats-container img {
-      max-height: 300px;
+      height: 300px;
       margin: auto;
     }
 
