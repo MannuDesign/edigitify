@@ -459,7 +459,7 @@ p.text-muted {
   right: 0;
   width: 100%;
   height: 100%;
-  background: url('https://i.imgur.com/fz6FJFM.png') no-repeat right top;
+  background: url(' ') no-repeat right top;
   background-size: contain;
   opacity: 0.1;
   z-index: 0;
@@ -700,7 +700,7 @@ p.text-muted {
 
 .testimonial-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 0px 0px;
   overflow: hidden;
   width:100%;
   
@@ -1155,6 +1155,61 @@ p.text-muted {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* about css */
+  .blue-box {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blue-box .number {
+    font-size: 2rem;
+  }
+
+  .blue-box p {
+    font-size: 0.75rem;
+  }
+
+  .phone-box {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.5rem;
+  }
+
+  .text-2xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .text-3xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  .text-sm {
+    font-size: 0.813rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.7rem !important;
+  }
+
+  .object-cover {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .col-md-6 {
+    width: 100% !important;
+  }
+
+  .d-flex.flex-wrap.justify-content-center {
+    flex-direction: row;
+    gap: 0.75rem !important;
+  }
+  /* about css end  */
 
   .dropdown-menu.mega-menu {
     position: static !important;
@@ -1221,14 +1276,110 @@ p.text-muted {
       padding: 70px 15px;
     }
 
+    .testimonial-card {
+      flex: 0 0 50%;
+      padding: 15px;
+      margin: 0 5px;
+    }
+  
+    .testimonial-text {
+      font-size: 13px;
+    }
+  
+    .testimonial-section h2 {
+      font-size: 16px;
+    }
 
+
+
+
+    .testimonial-card {
+      flex: 0 0 50%; /* 2 cards per row */
+      padding: 16px;
+    }
+  
+    .testimonial-text {
+      font-size: 13px;
+    }
+  
+    .testimonial-section h2 {
+      font-size: 16px;
+    }
 
 
 
   }
 
   @media (max-width: 480px) {
+    /* about css */
+    .text-2xl {
+      font-size: 1.125rem !important;
+    }
+  
+    .text-3xl {
+      font-size: 1.25rem !important;
+    }
+  
+    .text-sm {
+      font-size: 0.75rem !important;
+    }
+  
+    .text-xs {
+      font-size: 0.675rem !important;
+    }
+  
+    .blue-box {
+      width: 100%;
+      padding: 1rem;
+      height: auto;
+    }
+  
+    .blue-box .number {
+      font-size: 1.75rem;
+    }
+  
+    .phone-box {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .phone-icon {
+      font-size: 1rem;
+    }
+  
+    .d-flex.flex-wrap.justify-content-center {
+      flex-direction: column;
+      gap: 0.75rem !important;
+      align-items: center;
+    }
+  
+    .object-cover {
+      width: 100% !important;
+      height: auto !important;
+    }
+  
+    .no-bullets li {
+      font-size: 0.75rem;
+    }
+
+
+    /* about css end  */
     .partner-item {
       flex: 0 0 50%; /* 2 logos per view */
     }
+
+    .testimonial-card {
+      flex: 0 0 100%; /* 1 card per row */
+      padding: 14px;
+    }
+  
+    .testimonial-text {
+      font-size: 12px;
+    }
+  
+    .testimonial-section h2 {
+      font-size: 15px;
+    }
+
+
   }
