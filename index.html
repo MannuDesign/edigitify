@@ -1068,7 +1068,7 @@
 
     <!-- testimonials section start  -->
 
-    <div class="testimonial-section mt-5">
+    <div class="testimonial-section">
         <h2 class="services-title"> Testimonial </h2>
         <!-- <p class="services-subtitle">
             We offer expert solutions in <strong>web app design & development</strong>, <strong>digital
@@ -1135,7 +1135,7 @@
 
 
     <!-- accodion section start -->
-    <div class="container my-5">
+    <div class="container">
         <div class="row faq-section align-items-center">
 
             <!-- Left Image -->
@@ -1259,7 +1259,6 @@
     <!-- accodion section end  -->
 
 
-    <!-- blog post start -->
     <!-- Recent Blogs Section Start -->
     <section class="py-5 bg-light">
         <div class="container">
@@ -1271,13 +1270,19 @@
                 <!-- Blog Card 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="https://placehold.co/200" class="card-img-top" alt="Blog Image 1">
+                        <img src="img/blogmg1.jpeg" class="card-img-top" alt="Blog Image 1">
 
                         <div class="card-body">
-                            <h6 class="card-title fw-bold">Top Benefits of Hiring Website Designers from...</h6>
+                            <h6 class="card-title fw-bold">Design That Speaks: Unlocking the Power of Visual
+                                Communication"</h6>
                             <p class="card-text text-muted">
-                                Today’s world markets justify website development outsourcing as a standard business
-                                practice...
+                                In today's digital-first world, graphic design is more than just making things look
+                                good—it's about telling stories,
+                                building brands, and creating experiences that resonate. Whether it’s a logo, a social
+                                media post, or an entire website
+                                layout, design has the power to influence how we think, feel, and act.
+
+
                             </p>
                             <a href="#" class="read-more text-primary">Read More..</a>
                         </div>
@@ -1287,12 +1292,17 @@
                 <!-- Blog Card 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="https://placehold.co/200" class="card-img-top" alt="Blog Image 2">
+                        <img src="img/blogmg2.webp" class="card-img-top" alt="Blog Image 2">
                         <div class="card-body">
-                            <h6 class="card-title fw-bold">How to Find the Right AI Development Company...</h6>
+                            <h6 class="card-title fw-bold"> Crafting Campaigns That Convert: The Art and Strategy of
+                                Advertising </h6>
                             <p class="card-text text-muted">
-                                Artificial Intelligence (AI) is no longer science fiction jargon—today, it’s a
-                                transformative force...
+                                In the crowded world of marketing, a well-executed advertising campaign can be the
+                                difference between being noticed or
+                                being ignored. It's not just about flashy visuals or catchy slogans—it's about creating
+                                a strategic message that
+                                connects with your audience on an emotional and practical level.
+
                             </p>
                             <a href="#" class="read-more text-primary">Read More..</a>
                         </div>
@@ -1302,12 +1312,15 @@
                 <!-- Blog Card 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="https://placehold.co/200" class="card-img-top" alt="Blog Image 3">
+                        <img src="img/blogmg3.jpg" class="card-img-top" alt="Blog Image 3">
                         <div class="card-body">
-                            <h6 class="card-title fw-bold">Top 10 Factors to Consider When Hiring a Mach...</h6>
+                            <h6 class="card-title fw-bold"> The Rise of Influence: How Influencer Marketing is Changing
+                                the Game </h6>
                             <p class="card-text text-muted">
-                                Machine learning technology helps improve companies in every industry sector
-                                worldwide...
+                                Influencer marketing has transformed the way brands connect with consumers. In an age
+                                where people trust personal
+                                recommendations more than traditional ads, influencers have become the new voices of
+                                credibility.
                             </p>
                             <a href="#" class="read-more text-primary">Read More..</a>
                         </div>
@@ -1487,21 +1500,44 @@
 
 <script>
     const track = document.getElementById("testimonialTrack");
-    const cards = document.querySelectorAll(".testimonial-card");
     let index = 0;
-    const visibleCards = 3;
-    const totalCards = cards.length;
+
+    function getVisibleCards() {
+        const width = window.innerWidth;
+        if (width <= 480) {
+            return 1;
+        } else if (width <= 768) {
+            return 2;
+        } else {
+            return 3;
+        }
+    }
 
     function slideNext() {
+        const visibleCards = getVisibleCards();
+        const cards = document.querySelectorAll(".testimonial-card"); // Refresh count dynamically
+        const totalCards = cards.length;
+
         index++;
         if (index > totalCards - visibleCards) {
             index = 0;
         }
-        track.style.transform = `translateX(-${index * (100 / visibleCards)}%)`;
+
+        const cardWidth = 100 / visibleCards;
+        const shift = index * cardWidth;
+
+        track.style.transform = `translateX(-${shift}%)`;
     }
 
-    setInterval(slideNext, 3000); // Slides every 3 seconds
+    // Reset on resize
+    window.addEventListener('resize', () => {
+        index = 0;
+        track.style.transform = `translateX(0%)`;
+    });
+
+    setInterval(slideNext, 3000);
 </script>
+
 
 
 </body>
