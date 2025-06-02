@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,184 +90,167 @@
 
 
 
-/* banner css start  */
-
-.hero-section {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.4));
-  position: relative;
-  overflow: hidden;
-  
-}
-
-#heroCarousel {
- width:100%;
-  margin: auto;
-}
-
-.carousel-item {
-  transition: opacity 1s ease;
-   /* background: rgb(245, 245, 245);   */
-  /* white background for content */
-   
-  
-}
-
-.carousel-item.active {
-  opacity: 1;
-}
-
-.row.align-items-center {
-  min-height: 450px;
-}
-
-.hero-text {
-  padding-right: 40px;
-  color: #000;
-}
-
-.text-primary {
-  color: #7efcfa !important;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size:28px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  text-shadow: none;
-}
-
-h5 {
-  font-weight: 600;
-  font-size: 1.15rem;
-  margin-bottom: 16px;
-  color: #222;
-  font-style: normal;
-  letter-spacing: 0.3px;
-}
-
-.hero-title {
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 1.1;
-  color: #000;
-  margin-bottom: 22px;
-}
-
-.highlight {
-  color: #7efcfa;
-  position: relative;
-  animation: pulseColor 3s infinite;
-  font-weight: 900;
-}
-
-@keyframes pulseColor {
-
-  0%,
-  100% {
-    color: #7efcfa;
+  /* banner section */
+  .hero-section {
+    width: 100%;
+    height:500px;
+    padding:0px 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.3));
+    overflow: hidden;
   }
 
-  50% {
-    color: #50cfc9;
+  .carousel-item {
+    transition: opacity 1s ease;
   }
-}
 
-p.text-muted {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-  margin-bottom: 28px;
-  max-width: 460px;
-}
-
-.hero-buttons .btn {
-  background: #7efcfa;
-  border: none;
-  font-weight: 600;
-  padding: 12px 28px;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 15px rgba(126, 252, 250, 0.4);
-  color: #000;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.hero-buttons .btn:hover,
-.hero-buttons .btn:focus {
-  background-color: #50cfc9;
-  box-shadow: 0 8px 22px rgba(80, 207, 201, 0.6);
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-}
-
-.stats-container img {
-  border-radius: 16px;
-  
-  object-fit: contain;
-   height:800px;
-}
-
-/* Remove carousel arrows */
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
-}
-
-/* Dot indicators styling - black color */
-.carousel-indicators button {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #000;
-  /* black dots */
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-  border: none;
-}
-
-.carousel-indicators .active {
-  opacity: 1;
-  background-color: #000;
-  /* active dot also black */
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Fade slide animation */
-.fade-slide-up {
-  opacity: 0;
-  transform: translateY(25px);
-  animation: fadeSlideUp 0.8s ease forwards;
-}
-
-.fade-slide-up.delay-1 {
-  animation-delay: 0.35s;
-}
-
-.fade-slide-up.delay-2 {
-  animation-delay: 0.65s;
-}
-
-.fade-slide-up.delay-3 {
-  animation-delay: 0.95s;
-}
-
-.fade-slide-up.delay-4 {
-  animation-delay: 1.25s;
-}
-
-.fade-slide-up.delay-5 {
-  animation-delay: 1.55s;
-}
-
-@keyframes fadeSlideUp {
-  to {
+  .carousel-item.active {
     opacity: 1;
-    transform: translateY(0);
   }
-}
 
-.clearflex {clear: both;}
+  .row.align-items-center {
+     height: 500px;
+  }
+
+  /* @media (max-width: 768px) {
+    .row.align-items-center {
+      min-height: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  } */
+
+  .hero-text {
+    padding-right: 40px;
+    color: #000;
+  }
+
+  .text-primary {
+    color: #7efcfa !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+    color: #222;
+    letter-spacing: 0.3px;
+  }
+
+  .hero-title {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 22px;
+  }
+
+  .highlight {
+    color: #7efcfa;
+    animation: pulseColor 3s infinite;
+    font-weight: 900;
+  }
+
+  @keyframes pulseColor {
+
+    0%,
+    100% {
+      color: #7efcfa;
+    }
+
+    50% {
+      color: #50cfc9;
+    }
+  }
+
+  p.text-muted {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom:10px;
+    max-width: 460px;
+  }
+
+  .hero-buttons .btn {
+    background: #7efcfa;
+    border: none;
+    font-weight: 600;     
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(126, 252, 250, 0.4);
+    color: #000;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .hero-buttons .btn:hover {
+    background-color: #50cfc9;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .stats-container img {
+    border-radius: 16px;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-indicators button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.5;
+    border: none;
+  }
+
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .fade-slide-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeSlideUp 0.8s ease forwards;
+  }
+
+  .fade-slide-up.delay-1 {
+    animation-delay: 0.35s;
+  }
+
+  .fade-slide-up.delay-2 {
+    animation-delay: 0.65s;
+  }
+
+  .fade-slide-up.delay-3 {
+    animation-delay: 0.95s;
+  }
+
+  .fade-slide-up.delay-4 {
+    animation-delay: 1.25s;
+  }
+
+  .fade-slide-up.delay-5 {
+    animation-delay: 1.55s;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* banner section */
+
+.clearflex {clear:both;}
 
 /* maquee css  */
 .marquee-wrapper {
